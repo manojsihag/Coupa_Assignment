@@ -13,4 +13,4 @@ default_source :supermarket
 run_list 'apache::default'
 
 # Specify a custom source for a single cookbook:
-cookbook 'apache', '~> 0.1.0', git: 'git@github.com:manojsihag/Coupa_Assignment/apache.git', branch: 'main'
+cookbook 'apache', '~> 0.1.0', git: 'git@github.com:manojsihag/Coupa_Assignment.git', branch: 'main'
