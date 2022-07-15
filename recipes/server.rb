@@ -4,9 +4,13 @@
 #
 # Copyright:: 2022, The Authors, All Rights Reserved.
 
-package 'httpd' do
+package 'vim'
+
+package 'apache2' do
   action :install
 end
+
+package 'php'
 
 file 'var/www/html/index.html' do
   content "<h1>Hello, world!<h1>
@@ -15,7 +19,7 @@ file 'var/www/html/index.html' do
   mode '0755'
 end
 
-service 'httpd' do
-  action [ :enable, :start]
+service 'apache2' do
+  action [:enable,:start ]
 end
 

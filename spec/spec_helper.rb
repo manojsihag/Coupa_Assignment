@@ -1,2 +1,4 @@
 require 'chefspec'
-require 'chefspec/policyfile'
+#require 'chefspec/policyfile'
+
+ChefSpec::Coverage.start!
